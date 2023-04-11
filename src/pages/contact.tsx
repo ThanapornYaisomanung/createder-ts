@@ -1,7 +1,15 @@
 import Menu from "@/components/Menu"
 import Form from "@/components/Form"
+<<<<<<< HEAD
 
 export default function contact() {
+=======
+import React,{useEffect,useState} from "react"
+
+export default function contact() {
+
+
+>>>>>>> main
   return (
     <div>
       <Menu/>

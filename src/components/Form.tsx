@@ -1,4 +1,31 @@
+<<<<<<< HEAD
 export default function Form(){
+=======
+import React,{useEffect,useState} from "react"
+
+interface Data{
+    name: string;
+    email: string;
+    tel: string;
+    context: string;
+}
+
+const initialData:Data = {
+    name: "",
+    email: "",
+    tel: "",
+    context: "",
+};
+
+
+export default function Form(){
+    
+    useEffect(()=>{
+        console.log(initialData)
+    })
+
+    const [result,setResult] = useState<Data>(initialData);
+>>>>>>> main
     return(
         <div>
             <div className="bg-white rounded-2xl shadow-lg"style={{ width:"470px",height:"612px",fontFamily: 'Prompt' }}>
@@ -7,7 +34,13 @@ export default function Form(){
                     <div className="" style={{width:"350px",height:"75px",marginTop:"35px"}}>
                         <p>ชื่อ*</p>
                         <input className="border-b appearance-none bg-transparent w-full text-gray-700 focus:outline-none" 
+<<<<<<< HEAD
                         type="text" style={{paddingTop:"25px"}} ></input>
+=======
+                        type="text" style={{paddingTop:"25px"}} 
+                        name="name"
+                        value={result.name}></input>
+>>>>>>> main
                     </div>
                     <div style={{width:"350px",height:"75px",marginTop:"25px"}}>
                         <p>อีเมล*</p>
